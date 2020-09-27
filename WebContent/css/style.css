@@ -1,0 +1,89 @@
+@charset "ISO-8859-1";
+
+#headermenu{
+	
+	display:table; 
+}
+
+#headermenu div{ 
+	display:table-cell;
+	 padding-right:20px;
+}
+
+#headermenu a:link{
+	font-size: large;
+}
+
+.pageheading
+{
+	color:darkblue;
+}
+
+a:link{
+	color: cornflowerBlue;
+	text-decoration: none;
+}
+
+a:visited{
+	color: indigo;
+	text-decoration: none;
+}
+
+a:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+
+a:active{
+	
+	color:red;
+}
+
+table{
+	color: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 8px;
+}
+
+th{
+	background:darkblue;
+	font-size: larger;
+	color:cornsilk;
+}
+
+button{
+	padding:6px;
+	border-radius: 5px;
+}
+
+button[type=submit]
+{
+	font-weight:bold;
+}
+
+button:hover{
+	background: white;
+	color:green;
+}
+
+input{
+	border: 1px solid black;
+	border-radius: 4px;
+	height:20px;
+	border-color:green;
+}
+
+.message{
+	font-style: italic;
+	color:blue;
+}
+
+.error{
+	color:red;
+	margin:5px;
+	font-style:italic;
+}
