@@ -181,12 +181,11 @@ public class BookDAOTest extends BaseDAOTest {
 	public void  testFindByTitleExist()
 	{
 		String title = "Java 8 in Action";
-		Book bookTitle = bookDAO.findByTitle(title);
-		
-//		System.out.println(bookTitle.getAuthor());
-//		System.out.println(bookTitle.getPrice());
+		Book bookTitle = bookDAO.findByTitle(title);	
 		assertNotNull(bookTitle);
 	}
+	
+	
 	
 	@Test
 	public void  testFindByTitleNotExist()
@@ -197,7 +196,13 @@ public class BookDAOTest extends BaseDAOTest {
 		assertNull(bookTitle);
 	}
 	
-
+	@Test
+	public void testFindCount()
+	{
+		long totalBooks = bookDAO.count();
+		
+		assertEquals(3, totalBooks);
+	}
 	
 	
 	
